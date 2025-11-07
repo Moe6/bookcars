@@ -121,8 +121,8 @@ const _signup = async (req: Request, res: Response, userType: bookcarsTypes.User
     } catch (deleteErr) {
       logger.error(`[user.signup] ${i18n.t('DB_ERROR')} ${JSON.stringify(body)}`, deleteErr)
     }
-    logger.error(`[user.signup] ${i18n.t('SMTP_ERROR')}`, err)
-    res.status(400).send(i18n.t('SMTP_ERROR') + err)
+    logger.error(`[user.signup] ${i18n.t('EMAIL_ERROR')}`, err)
+    res.status(400).send(i18n.t('EMAIL_ERROR') + err)
   }
 }
 

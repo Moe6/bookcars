@@ -201,32 +201,43 @@ export const JWT_EXPIRE_AT = Number.parseInt(__env__('BC_JWT_EXPIRE_AT', false, 
 export const TOKEN_EXPIRE_AT = Number.parseInt(__env__('BC_TOKEN_EXPIRE_AT', false, '86400'), 10)
 
 /**
+ * Mail provider used to send transactional emails.
+ *
+ * @type {('smtp' | 'emailjs')}
+ */
+const MAIL_PROVIDER_RAW = __env__('BC_MAIL_PROVIDER', false, 'smtp').toLowerCase()
+export const MAIL_PROVIDER = (MAIL_PROVIDER_RAW === 'emailjs' ? 'emailjs' : 'smtp') as 'smtp' | 'emailjs'
+
+const REQUIRE_SMTP_CREDENTIALS = MAIL_PROVIDER === 'smtp'
+const REQUIRE_EMAILJS_CREDENTIALS = MAIL_PROVIDER === 'emailjs'
+
+/**
  * SMTP host.
  *
  * @type {string}
  */
-export const SMTP_HOST = __env__('BC_SMTP_HOST', true)
+export const SMTP_HOST = __env__('BC_SMTP_HOST', REQUIRE_SMTP_CREDENTIALS)
 
 /**
  * SMTP port.
  *
  * @type {number}
  */
-export const SMTP_PORT = Number.parseInt(__env__('BC_SMTP_PORT', true), 10)
+export const SMTP_PORT = Number.parseInt(__env__('BC_SMTP_PORT', REQUIRE_SMTP_CREDENTIALS, '0'), 10)
 
 /**
  * SMTP username.
  *
  * @type {string}
  */
-export const SMTP_USER = __env__('BC_SMTP_USER', true)
+export const SMTP_USER = __env__('BC_SMTP_USER', REQUIRE_SMTP_CREDENTIALS)
 
 /**
  * SMTP password.
  *
  * @type {string}
  */
-export const SMTP_PASS = __env__('BC_SMTP_PASS', true)
+export const SMTP_PASS = __env__('BC_SMTP_PASS', REQUIRE_SMTP_CREDENTIALS)
 
 /**
  * SMTP from email.
@@ -234,6 +245,41 @@ export const SMTP_PASS = __env__('BC_SMTP_PASS', true)
  * @type {string}
  */
 export const SMTP_FROM = __env__('BC_SMTP_FROM', true)
+
+/**
+ * EmailJS API endpoint.
+ *
+ * @type {string}
+ */
+export const EMAILJS_API_URL = __env__('BC_EMAILJS_API_URL', false, 'https://api.emailjs.com/api/v1.0/email/send')
+
+/**
+ * EmailJS service identifier.
+ *
+ * @type {string}
+ */
+export const EMAILJS_SERVICE_ID = __env__('BC_EMAILJS_SERVICE_ID', REQUIRE_EMAILJS_CREDENTIALS)
+
+/**
+ * EmailJS template identifier.
+ *
+ * @type {string}
+ */
+export const EMAILJS_TEMPLATE_ID = __env__('BC_EMAILJS_TEMPLATE_ID', REQUIRE_EMAILJS_CREDENTIALS)
+
+/**
+ * EmailJS public (client) key.
+ *
+ * @type {string}
+ */
+export const EMAILJS_PUBLIC_KEY = __env__('BC_EMAILJS_PUBLIC_KEY', REQUIRE_EMAILJS_CREDENTIALS)
+
+/**
+ * EmailJS private key (a.k.a. access token).
+ *
+ * @type {string}
+ */
+export const EMAILJS_PRIVATE_KEY = __env__('BC_EMAILJS_PRIVATE_KEY', false)
 
 /**
  * CDN root folder path.

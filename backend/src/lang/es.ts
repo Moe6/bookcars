@@ -3,7 +3,7 @@ import * as env from '../config/env.config'
 export const es = {
   ERROR: 'Error interno: ',
   DB_ERROR: 'Error en la solicitud a la base de datos: ',
-  SMTP_ERROR: 'Error SMTP - Fallo en el envío del correo electrónico: ',
+  EMAIL_ERROR: 'Error de correo - Fallo en el envío del correo electrónico: ',
   ACCOUNT_ACTIVATION_SUBJECT: 'Activación de su cuenta',
   HELLO: 'Hola ',
   ACCOUNT_ACTIVATION_LINK: 'Por favor, active su cuenta haciendo clic en el enlace:',

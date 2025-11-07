@@ -57,6 +57,12 @@ Customers can register through the web frontend or mobile app, search for availa
 * Ready for single or multiple suppliers
 * Car fleet management
 * Flexible time-based car availability
+
+### Email Delivery
+
+* Choose the provider with `BC_MAIL_PROVIDER` (`smtp` by default, `emailjs` to use the EmailJS REST API)
+* For SMTP, provide `BC_SMTP_HOST`, `BC_SMTP_PORT`, `BC_SMTP_USER`, `BC_SMTP_PASS`, and `BC_SMTP_FROM`
+* For EmailJS, provide `BC_EMAILJS_SERVICE_ID`, `BC_EMAILJS_TEMPLATE_ID`, `BC_EMAILJS_PUBLIC_KEY`, optional `BC_EMAILJS_PRIVATE_KEY`, and `BC_EMAILJS_API_URL` if you need a custom endpoint
 * Flexible rental date and time constraints
 * Booking management
 * Vehicle scheduler
