@@ -1,5 +1,5 @@
 [Unit]
-Description=BookCars Backend Server
+Description=Rent-a-Ride Backend Server
 Wants=mongod.service
 After=mongod.service
 

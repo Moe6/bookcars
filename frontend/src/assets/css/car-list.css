@@ -18,11 +18,11 @@ section.car-list div.title {
   font-weight: 400;
 }
 
-section.car-list div.title div.bookcars {
+section.car-list div.title div.brand {
   font-size: 22px;
 }
 
-section.car-list div.title div.bookcars span.title-bookcars {
+section.car-list div.title div.brand span.title-brand {
   color: #212121;
   font-weight: 500;
 }

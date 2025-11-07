@@ -232,9 +232,9 @@ const CarList = ({
             <>
               {totalRecords > 0 && (
                 <div className="title">
-                  <div className="bookcars">
+                  <div className="brand">
                     <span>{strings.TITLE_1}</span>
-                    <span className="title-bookcars">{env.WEBSITE_NAME}</span>
+                    <span className="title-brand">{env.WEBSITE_NAME}</span>
                     <span>{strings.TITLE_2}</span>
                   </div>
                   <div className="car-count">

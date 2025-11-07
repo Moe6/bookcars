@@ -24,13 +24,13 @@ https://github.com/user-attachments/assets/01afc5ec-3c0a-47b9-a4e1-3b8888b2a695
 
 [![](https://bookcars.github.io/content/cover-1.png)](https://bookcars.dynv6.net:3002/)
 
-## BookCars
+## Rent-a-Ride
 
-BookCars is an open-source and cross-platform car rental platform with an admin panel for managing fleets and bookings, as well as a frontend and a mobile app for renting cars.
+Rent-a-Ride (formerly BookCars) is an open-source and cross-platform car rental platform with an admin panel for managing fleets and bookings, as well as a frontend and a mobile app for renting cars.
 
 It comes with built-in support for Stripe and PayPal payment gateways, allowing you to choose the one best suited for your country or business model. If Stripe isn't available in your region, PayPal serves as a secure and reliable alternative.
 
-BookCars supports both single-supplier and multi-supplier modes. Suppliers can manage their fleets and bookings through a dedicated admin panel. Each new supplier receives an email prompting them to create their account and gain access to the system.
+Rent-a-Ride supports both single-supplier and multi-supplier modes. Suppliers can manage their fleets and bookings through a dedicated admin panel. Each new supplier receives an email prompting them to create their account and gain access to the system.
 
 The admin panel allows admins to manage suppliers, cars, countries, locations, parking spots, customers, bookings, and payments.
 
@@ -110,7 +110,7 @@ If this project helped you, saved you time, or inspired you in any way, please c
 
 To contribute code or report issues, please read the [Contribution Guide](https://github.com/aelassas/bookcars/blob/main/.github/CONTRIBUTING.md) to learn about the process, coding standards, and how to submit pull requests.
 
-If you want to customize BookCars while keeping your fork up to date with the latest changes, check out the [Fork, Customize, and Sync](https://github.com/aelassas/bookcars/wiki/Fork,-Customize,-and-Sync) guide in the Wiki.
+If you want to customize Rent-a-Ride while keeping your fork up to date with the latest changes, check out the [Fork, Customize, and Sync](https://github.com/aelassas/bookcars/wiki/Fork,-Customize,-and-Sync) guide in the Wiki.
 
 ## Live Demo
 <!--
@@ -154,7 +154,7 @@ You can install the Android App by downloading the APK and installing it on any 
 <!--
 ## Website Source Code (bookcars.github.io)
 
-The source code for the official BookCars website is available here:
+The source code for the official Rent-a-Ride website is available here:
 
 [https://github.com/bookcars/bookcars.github.io](https://github.com/bookcars/bookcars.github.io)
 
@@ -171,4 +171,4 @@ Feel free to explore the code, suggest improvements, or use it as a template for
 
 ## License
 
-BookCars is [MIT licensed](https://github.com/aelassas/bookcars/blob/main/LICENSE).
+Rent-a-Ride is [MIT licensed](https://github.com/aelassas/bookcars/blob/main/LICENSE).

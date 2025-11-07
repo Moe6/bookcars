@@ -49,7 +49,7 @@ export const expireAt = 'expireAt'
  *
  * @type {string}
  */
-export const WEBSITE_NAME = __env__('BC_WEBSITE_NAME', false, 'BookCars')
+export const WEBSITE_NAME = __env__('BC_WEBSITE_NAME', false, 'Rent-a-Ride')
 
 /**
  * Indicate whether we are in CI environment or not.

@@ -1,6 +1,6 @@
 {
   "name": "bookcars-admin",
-  "description": "Admin panel for managing BookCars",
+  "description": "Admin panel for managing Rent-a-Ride",
   "private": true,
   "version": "8.3.0",
   "type": "module",

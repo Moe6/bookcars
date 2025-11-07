@@ -1,6 +1,6 @@
 {
   "name": "bookcars-backend",
-  "description": "Backend server for BookCars",
+  "description": "Backend server for Rent-a-Ride",
   "version": "8.3.0",
   "main": "index.js",
   "type": "module",

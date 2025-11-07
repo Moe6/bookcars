@@ -2,9 +2,9 @@
   "expo": {
     "jsEngine": "hermes",
     "newArchEnabled": true,
-    "name": "BookCars",
+    "name": "Rent-a-Ride",
     "version": "8.3.0",
-    "slug": "bookcars",
+    "slug": "rent-a-ride",
     "icon": "./assets/icon.png",
     "assetBundlePatterns": [
       "**/*"
@@ -21,13 +21,13 @@
       "icon": "./assets/icon.png",
       "googleServicesFile": "./google-services.json",
       "softwareKeyboardLayoutMode": "pan",
-      "package": "com.bookcars"
+      "package": "com.rentaride"
     },
     "ios": {
       "buildNumber": "8.3.0",
       "supportsTablet": true,
       "icon": "./assets/icon.png",
-      "bundleIdentifier": "com.bookcars"
+      "bundleIdentifier": "com.rentaride"
     },
     "plugins": [
       "expo-localization",

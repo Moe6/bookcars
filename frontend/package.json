@@ -1,6 +1,6 @@
 {
   "name": "bookcars-frontend",
-  "description": "Public web frontend for BookCars (customer-facing website)",
+  "description": "Public web frontend for Rent-a-Ride (customer-facing website)",
   "private": true,
   "version": "8.3.0",
   "type": "module",
